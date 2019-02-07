@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>KONVERSI NILAI</title>
+    </head>
+    <script language="Javascript">
+    function test () {
+    var nilai=document.kirim.T1.value
+    if(nilai >=93)
+        document.kirim.T2.value="A"
+    else if(nilai >=83)
+        document.kirim.T2.value="B"
+    else if(nilai >=75)
+        document.kirim.T2.value="C"
+    else if(nilai >=50)
+        document.kirim.T2.value="D"
+    else if(nilai <=49)
+        document.kirim.T2.value="E"
+    
+    }
+    </script>
+    <body>
+        <h1>KONFERENSI NILAI</h1>
+        <form method="POST" name="kirim">
+            <p>Nilai <input type="text" name="T1" size="20"></p>
+            <p><input type="button" value="KLIK" name="B1" onclick=test()></p>
+            <p>Keterangan <input type="text" name="T2" size="20"></p>
+        </form>
+    </body>
+</html>
